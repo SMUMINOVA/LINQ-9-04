@@ -22,6 +22,10 @@ namespace EF
             foreach(var m in an.Reverse())
             System.Console.Write(m + " ");
 
+            int[] array = {1,2,3,4,5,6,7,8,9,10,-11,-12,-13,-14,-15};
+            int[] resultArr = {array.Where(x => x > 0).Count(), array.Where(x => x < 0).Sum()};
+            foreach(var v in resultArr)
+            System.Console.WriteLine(v);
         }
     }
 }
